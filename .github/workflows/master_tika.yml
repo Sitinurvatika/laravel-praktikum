@@ -31,6 +31,7 @@ jobs:
       - name: Install npm dependencies and build frontend
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npx vite build
 
       - name: Check if composer.json exists
